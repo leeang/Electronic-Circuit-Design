@@ -25,12 +25,11 @@ legend('Ib = 0.5 uA', 'Ib = 4.7 uA', 'Ib = 14.7 uA', 'Ib = 26.3 uA', 'Ib = 38.2 
 xlabel('Vce (V)');
 ylabel('Ic (A)');
 title('Ic-Vce curve for different Ib');
-axis([0 1.6 0 20e-3]);
+axis([0 1 0 20e-3]);
 
 subplot(2, 1, 1);
-Vbe=[0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6];
-Ib=[0.5,4.7,14.7,26.3,38.2,48.4,55.7,64.9,73.9,85.8,91.1];
-plot(Vbe,Ib);
+plot(Vbe, Ic);
 xlabel('Vbe (V)');
-ylabel('Ib (uA)');
-title('Ib-Vbe curve');
+ylabel('Ic (A)');
+title('Ic-Vbe curve');
+axis([0 1 0 20e-3]);
