@@ -63,3 +63,4 @@ plot(Ic, gain);
 xlabel('Ic (A)');
 ylabel('beta');
 title('beta versus the collector current');
+axis([0 0.0171 0 200]);
