@@ -1,7 +1,7 @@
 plot(Vgs, sqrt_Id, 'LineWidth', 5);
 
 V_I_matrix = [Vgs sqrt_Id];
-V_I_matrix_selected = V_I_matrix(find(V_I_matrix(:, 1)>2), :);
+V_I_matrix_selected = V_I_matrix(V_I_matrix(:, 1)>2, :);
 
 [p, S] = polyfit(V_I_matrix_selected(:, 1), V_I_matrix_selected(:, 2), 1);
 

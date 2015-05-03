@@ -15,7 +15,7 @@ hold on
 plot(v24,i24,'Color',[0.5,0.5,0.5]);	%Grey
 
 V_I_matrix = [v31 i31];
-V_I_matrix_selected = V_I_matrix(find(V_I_matrix(:, 1)>1), :);
+V_I_matrix_selected = V_I_matrix(V_I_matrix(:, 1)>1, :);
 
 [p, S] = polyfit(V_I_matrix_selected(:, 1), V_I_matrix_selected(:, 2), 1);
 
