@@ -18,4 +18,4 @@ semilogx(bode2(:,1), bode2(:,2));
 
 xlabel('Frequency');
 ylabel('Magnitude');
-legend('Q25', 'Q31', '-3dB of Q25', '-3dB of Q31', 'location', 'southeast');
+legend('-3dB of Q25', '-3dB of Q31', 'Q25', 'Q31', 'location', 'southeast');
